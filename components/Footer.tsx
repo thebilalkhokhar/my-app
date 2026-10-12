@@ -43,8 +43,8 @@ export default function Footer() {
           <Image
             src="/images/logo-white.png"
             alt="Print247"
-            width={137}
-            height={40}
+            width={184}
+            height={45}
             className="h-9 w-auto"
           />
         </div>

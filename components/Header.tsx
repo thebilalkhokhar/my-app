@@ -3,19 +3,19 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="mx-auto grid w-full max-w-[1760px] grid-cols-[1fr_auto_1fr] items-center gap-3 px-4 py-4 md:px-8">
+    <header className="relative mx-auto flex w-full max-w-[1760px] items-center justify-between gap-3 px-4 py-4 md:px-8">
       <Link href="/" aria-label="Print247 home" className="flex-none">
         <Image
           src="/images/logo.png"
           alt="Print247"
-          width={137}
-          height={40}
+          width={173}
+          height={43}
           priority
-          className="h-9 w-auto md:h-10"
+          className="h-9 w-auto shrink-0 md:h-10"
         />
       </Link>
 
-      <p className="hidden items-center gap-1.5 text-xs lg:flex">
+      <p className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-1.5 text-xs lg:flex">
         <span
           aria-label="Rated 4.8 out of 5"
           role="img"
